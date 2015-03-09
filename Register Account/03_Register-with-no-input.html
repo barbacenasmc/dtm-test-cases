@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8000/" />
+<title>03_Register-with-no-input</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">03_Register-with-no-input</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/register</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Register']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.form-input &gt; span</td>
+	<td>The firstname field is required.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form/div[2]/span</td>
+	<td>The lastname field is required.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[3]/span</td>
+	<td>The username field is required.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[5]/span</td>
+	<td>The password field is required.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[6]/span</td>
+	<td>The email field is required.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[7]/span</td>
+	<td>The mobile no field is required.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[8]/span</td>
+	<td>The agency id field is required.</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[10]/span</td>
+	<td>The role id field is required.</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
