@@ -3,43 +3,63 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://localhost:8000/" />
-<title>04_Register-with-no-firstname</title>
+<link rel="selenium.base" href="http://dtm.solutionsresource.com/" />
+<title>Register-IOM-No-Suboffice</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">04_Register-with-no-firstname</td></tr>
+<tr><td rowspan="1" colspan="3">Register-IOM-No-Suboffice</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/register</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Create new account.</td>
 	<td></td>
 </tr>
 <tr>
 	<td>type</td>
-	<td>name=lastname</td>
-	<td>Dela Cruz</td>
-</tr>
-<tr>
-	<td>type</td>
 	<td>name=username</td>
-	<td>jdelacruz00</td>
+	<td>iom-admin</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=password</td>
-	<td>jdelacruz00</td>
+	<td>iom-admin</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=password2</td>
-	<td>jdelacruz00</td>
+	<td>iom-admin</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=agency_id</td>
+	<td>label=IOM</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=role_id</td>
+	<td>label=Administrator</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=firstname</td>
+	<td>IOM</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=lastname</td>
+	<td>Admin</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>name=email</td>
-	<td>shiela@solutionsresource.com</td>
+	<td>barbacenasmc@gmail.com</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -47,25 +67,11 @@
 	<td>+63 926 123 4567</td>
 </tr>
 <tr>
-	<td>select</td>
-	<td>name=agency_id</td>
-	<td>label=Agency 1</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>name=role_id</td>
-	<td>label=Data Collector</td>
-</tr>
-<tr>
 	<td>clickAndWait</td>
 	<td>//input[@value='Register']</td>
 	<td></td>
 </tr>
-<tr>
-	<td>assertText</td>
-	<td>css=div.form-input &gt; span</td>
-	<td>The firstname field is required.</td>
-</tr>
+
 </tbody></table>
 </body>
 </html>

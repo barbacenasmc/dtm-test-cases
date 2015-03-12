@@ -3,13 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://localhost:8000/" />
-<title>04_Register-with-no-firstname</title>
+<link rel="selenium.base" href="http://dtm.solutionsresource.com/" />
+<title>Register-IOM-Report-Viewer</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">04_Register-with-no-firstname</td></tr>
+<tr><td rowspan="1" colspan="3">Register-IOM-Report-Viewer</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -18,43 +18,53 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>name=lastname</td>
-	<td>Dela Cruz</td>
-</tr>
-<tr>
-	<td>type</td>
 	<td>name=username</td>
-	<td>jdelacruz00</td>
+	<td>iom-report-viewer</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=password</td>
-	<td>jdelacruz00</td>
+	<td>iom-report-viewer</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=password2</td>
-	<td>jdelacruz00</td>
+	<td>iom-report-viewer</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=agency_id</td>
+	<td>label=IOM</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=sub_office</td>
+	<td>label=Cotabato</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=role_id</td>
+	<td>label=Report Viewers</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=firstname</td>
+	<td>IOM</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=lastname</td>
+	<td>Report Viewer</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>name=email</td>
-	<td>shiela@solutionsresource.com</td>
+	<td>iom-report-viewer@gmail.com</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>name=mobile_no</td>
 	<td>+63 926 123 4567</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>name=agency_id</td>
-	<td>label=Agency 1</td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>name=role_id</td>
-	<td>label=Data Collector</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -63,9 +73,10 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=div.form-input &gt; span</td>
-	<td>The firstname field is required.</td>
+	<td>css=div.alert.alert-success &gt; span</td>
+	<td>Thank you! Your account has been registered.</td>
 </tr>
+
 </tbody></table>
 </body>
 </html>

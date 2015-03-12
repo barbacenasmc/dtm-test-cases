@@ -3,13 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://localhost:8000/" />
-<title>05_Register-with-no-lastname</title>
+<link rel="selenium.base" href="http://dtm.solutionsresource.com/" />
+<title>Register-with-Single-Quotes</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">05_Register-with-no-lastname</td></tr>
+<tr><td rowspan="1" colspan="3">Register-with-Single-Quotes</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -19,27 +19,32 @@
 <tr>
 	<td>type</td>
 	<td>name=firstname</td>
-	<td>Juan</td>
+	<td>'Juan'</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=lastname</td>
+	<td>'Dela Cruz'</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>name=username</td>
-	<td>jdelacruz00</td>
+	<td>'jdelacruz00'</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=password</td>
-	<td>jdelacruz00</td>
+	<td>'jdelacruz00'</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=password2</td>
-	<td>jdelacruz00</td>
+	<td>'jdelacruz00'</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>name=email</td>
-	<td>shiela@solutionsresource.com</td>
+	<td>singlequotes@gmail.com</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -61,26 +66,7 @@
 	<td>//input[@value='Register']</td>
 	<td></td>
 </tr>
-<tr>
-	<td>assertText</td>
-	<td>css=span</td>
-	<td>The lastname field is required.</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=div.autofill-cover</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='802576874-scrollable']/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='802576874-scrollable']/div[2]</td>
-	<td></td>
-</tr>
+
 </tbody></table>
 </body>
 </html>

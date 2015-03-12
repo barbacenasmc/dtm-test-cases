@@ -3,13 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://localhost:8000/" />
-<title>05_Register-with-no-lastname</title>
+<link rel="selenium.base" href="http://dtm.solutionsresource.com/" />
+<title>Register-Agency-Admin</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">05_Register-with-no-lastname</td></tr>
+<tr><td rowspan="1" colspan="3">Register-Agency-Admin</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -18,33 +18,18 @@
 </tr>
 <tr>
 	<td>type</td>
-	<td>name=firstname</td>
-	<td>Juan</td>
-</tr>
-<tr>
-	<td>type</td>
 	<td>name=username</td>
-	<td>jdelacruz00</td>
+	<td>agency-admin</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=password</td>
-	<td>jdelacruz00</td>
+	<td>agency-admin</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=password2</td>
-	<td>jdelacruz00</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=email</td>
-	<td>shiela@solutionsresource.com</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=mobile_no</td>
-	<td>+63 926 123 4567</td>
+	<td>agency-admin</td>
 </tr>
 <tr>
 	<td>select</td>
@@ -54,7 +39,27 @@
 <tr>
 	<td>select</td>
 	<td>name=role_id</td>
-	<td>label=Data Collector</td>
+	<td>label=Administrator</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=firstname</td>
+	<td>Agency</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=lastname</td>
+	<td>Admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>upcismb_09@yahoo.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=mobile_no</td>
+	<td>+63 926 123 4567</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -63,24 +68,10 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>css=span</td>
-	<td>The lastname field is required.</td>
+	<td>css=div.alert.alert-success &gt; span</td>
+	<td>Thank you! Your account has been registered.</td>
 </tr>
-<tr>
-	<td>click</td>
-	<td>css=div.autofill-cover</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='802576874-scrollable']/div[2]</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//div[@id='802576874-scrollable']/div[2]</td>
-	<td></td>
-</tr>
+
 </tbody></table>
 </body>
 </html>
