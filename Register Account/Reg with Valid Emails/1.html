@@ -3,13 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://dtm.solutionsresource.com/" />
-<title>Register-Agency-Report-Viewer</title>
+<link rel="selenium.base" href="http://localhost:8000/" />
+<title>1</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Register-Agency-Report-Viewer</td></tr>
+<tr><td rowspan="1" colspan="3">1</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -19,58 +19,64 @@
 <tr>
 	<td>type</td>
 	<td>name=username</td>
-	<td>agency-report-viewer</td>
+	<td>user1</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=password</td>
-	<td>agency-report-viewer</td>
+	<td>user1</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>id=password2</td>
-	<td>agency-report-viewer</td>
+	<td>username1</td>
 </tr>
 <tr>
 	<td>select</td>
-	<td>name=agency_id</td>
-	<td>label=Agency 1</td>
+	<td>name=cluster</td>
+	<td>label=Shelter</td>
 </tr>
 <tr>
-	<td>select</td>
-	<td>name=role_id</td>
-	<td>label=Report Viewer</td>
+	<td>type</td>
+	<td>name=agency_name</td>
+	<td>Sample</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=roles[]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@name='roles[]'])[2]</td>
+	<td></td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>name=firstname</td>
-	<td>Agency</td>
+	<td>Sample</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>name=lastname</td>
-	<td>Report Viewer</td>
+	<td>Sample</td>
 </tr>
 <tr>
 	<td>type</td>
 	<td>name=email</td>
-	<td>barbacenasmc@gmail.com</td>
+	<td>niceandsimple@example.com</td>
 </tr>
 <tr>
-	<td>type</td>
-	<td>name=mobile_no</td>
-	<td>+63 926 123 4567</td>
+	<td>click</td>
+	<td>xpath=(//input[@name='subscribe'])[2]</td>
+	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
 	<td>//input[@value='Register']</td>
 	<td></td>
 </tr>
-<tr>
-	<td>assertText</td>
-	<td>css=div.alert.alert-success &gt; span</td>
-	<td>Thank you! Your account has been registered.</td>
-</tr>
+
 </tbody></table>
 </body>
 </html>
